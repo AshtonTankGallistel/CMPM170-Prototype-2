@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HowToPlay : MonoBehaviour
 {
-    public GameObject howToPlayPanel; // Assign this in the inspector
+    public GameObject howToPlayPanel;
 
     public void ShowPanel()
     {
