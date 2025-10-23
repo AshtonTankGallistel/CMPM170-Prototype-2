@@ -1382,11 +1382,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 775610543267033392, guid: 0172eb1182552424493ee0a0b06da3e7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5067494010180107730, guid: 0172eb1182552424493ee0a0b06da3e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 824624675}
   m_SourcePrefab: {fileID: 100100000, guid: 0172eb1182552424493ee0a0b06da3e7, type: 3}
+--- !u!1 &824624674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5067494010180107730, guid: 0172eb1182552424493ee0a0b06da3e7, type: 3}
+  m_PrefabInstance: {fileID: 824624673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &824624675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824624674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9f34107b61444bdb25e52bc2a74c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RageBallLaunchScript
+  launchForce: 10
+  windForce: 5
+  myArrow: {fileID: 824624676}
+--- !u!1 &824624676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6734481827380094501, guid: 0172eb1182552424493ee0a0b06da3e7, type: 3}
+  m_PrefabInstance: {fileID: 824624673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1112849689
 GameObject:
   m_ObjectHideFlags: 0

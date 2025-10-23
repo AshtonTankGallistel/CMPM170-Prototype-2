@@ -11,10 +11,13 @@ public class RageBallLaunchScript : MonoBehaviour
     private bool isDragging = false;
     private Rigidbody2D rb;
     public float windForce = 5f;
+    [SerializeField] GameObject myArrow;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        myArrow.SetActive(false);
         StartCoroutine(ApplyWind());
     }
 
@@ -24,11 +27,13 @@ public class RageBallLaunchScript : MonoBehaviour
         // Check for mouse input
         if (Input.GetMouseButtonDown(0))
         {
+            myArrow.SetActive(true);
             startPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             isDragging = true;
         }
         else if (Input.GetMouseButtonUp(0) && isDragging)
         {
+            myArrow.SetActive(false);
             endPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             direction = (startPoint - endPoint);
             Launch(direction);
@@ -41,6 +46,12 @@ public class RageBallLaunchScript : MonoBehaviour
             endPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             direction = (startPoint - endPoint);
             Debug.DrawLine(startPoint, endPoint, Color.red);
+
+            //arrow signalling
+            myArrow.transform.localScale = new Vector3(direction.magnitude / 4, 1, 1);
+            float myAngle = Mathf.Atan2((startPoint.y - endPoint.y),(startPoint.x - endPoint.x ));
+            myAngle *= Mathf.Rad2Deg;
+            myArrow.transform.eulerAngles = new Vector3(0, 0, myAngle);
         }
     }
 
