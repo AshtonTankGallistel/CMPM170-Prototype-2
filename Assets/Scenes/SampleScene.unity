@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb7748f145db44509b39a05885d20dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallLaunchScript
-  launchForce: 8
+  launchForce: 11
 --- !u!50 &1601058230
 Rigidbody2D:
   serializedVersion: 5
