@@ -8,6 +8,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Map");
     }
 
+    public void PlayRageGame()
+    {
+        SceneManager.LoadScene("Map Rage");
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit!");

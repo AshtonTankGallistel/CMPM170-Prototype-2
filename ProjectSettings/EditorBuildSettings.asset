@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 58e63624a0d0940f5b71f4610ca53fba
+  - enabled: 1
+    path: Assets/Scenes/Map Rage.unity
+    guid: 03857ceac0d234bb9a146a2f319095a0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
